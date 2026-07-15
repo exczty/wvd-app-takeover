@@ -1,0 +1,1 @@
+# wvd-app-takeover
