@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Microsoft Takeover – WVD App</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; text-align: center; padding: 50px; background: #f0f6fc; }
+        .container { max-width: 750px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        h1 { color: #0078D4; font-size: 2.2em; }
+        .domain { background: #e8f0fe; padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; word-break: break-all; font-size: 13px; }
+        .status { color: #00a86b; font-weight: bold; font-size: 1.1em; }
+        .badge { display: inline-block; background: #0078D4; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; }
+        hr { border: none; border-top: 1px solid #e0e0e0; margin: 25px 0; }
+        .footer { color: #666; font-size: 13px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">PROOF OF CONCEPT</span>
+        <h1>✅ Subdomain Takeover</h1>
+        <p class="status">● This subdomain is now under my control</p>
+        <p><strong>Domain:</strong></p>
+        <p class="domain" id="domain">app.2b83d6a0-d4ce-4c82-9d12-e986f6432818.rdbroker.wvd.microsoft.com</p>
+        <p>This demonstrates a security vulnerability where an unclaimed Microsoft subdomain pointing to GitHub Pages can be taken over by any GitHub user.</p>
+        <hr>
+        <p><strong>Impact:</strong> An attacker could host phishing pages, malicious content, or steal cookies on a trusted <code>microsoft.com</code> subdomain.</p>
+        <p class="footer"><em>Proof of Concept – July 2026 | Reported responsibly</em></p>
+    </div>
+    <script>document.getElementById('domain').textContent = window.location.hostname;</script>
+</body>
+</html>
